@@ -1,4 +1,4 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 
 :root {
   --paper: #f6f5f0;
@@ -2967,5 +2967,69 @@ h1.sr-only {
 
   .service-number {
     margin-bottom: clamp(26px, 8vw, 42px);
+  }
+}
+
+/* Ajuste editorial da seção Para Quem na versão oficial. */
+.portfolio-projects {
+  background-color: #b6ff00;
+  color: #3c1a47;
+}
+
+.portfolio-projects::before,
+.portfolio-projects::after {
+  display: none;
+}
+
+.portfolio-heading {
+  border-top-color: rgba(60, 26, 71, 0.24);
+}
+
+.portfolio-heading-copy h2,
+.territory-heading h3,
+.territory-heading p {
+  color: #3c1a47;
+}
+
+.territory-heading p {
+  opacity: 0.72;
+}
+
+.mosaic-brands .editorial-item {
+  mix-blend-mode: multiply;
+}
+/* Barra fixa de rebranding. */
+.rebrand-banner {
+  position: fixed;
+  top: 82px;
+  right: clamp(20px, 5vw, 72px);
+  z-index: 10;
+  display: grid;
+  gap: 2px;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 40px));
+  padding: 9px clamp(12px, 1.5vw, 18px);
+  border: 1px solid rgba(42, 35, 18, 0.16);
+  border-radius: 4px;
+  background: #ffbe0b;
+  box-shadow: 0 8px 28px rgba(7, 7, 7, 0.08);
+  color: #2a2312;
+  font-size: 0.72rem;
+  font-weight: 750;
+  line-height: 1.18;
+  text-align: left;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.rebrand-banner span {
+  display: block;
+}
+
+@media (max-width: 880px) {
+  .rebrand-banner {
+    top: 66px;
+    right: clamp(14px, 5vw, 22px);
+    max-width: calc(100vw - 28px);
   }
 }
