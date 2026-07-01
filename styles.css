@@ -44,7 +44,7 @@ a {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 30;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -3003,7 +3003,7 @@ h1.sr-only {
   position: fixed;
   top: 82px;
   right: clamp(20px, 5vw, 72px);
-  z-index: 10;
+  z-index: 30;
   display: grid;
   gap: 2px;
   width: max-content;
@@ -3031,5 +3031,20 @@ h1.sr-only {
     top: 66px;
     right: clamp(14px, 5vw, 22px);
     max-width: calc(100vw - 28px);
+  }
+}
+/* Menu mobile acima da barra de rebranding. */
+@media (max-width: 880px) {
+  .site-header {
+    z-index: 40;
+  }
+
+  .nav-links.is-open {
+    position: relative;
+    z-index: 41;
+  }
+
+  .rebrand-banner {
+    z-index: 20;
   }
 }
