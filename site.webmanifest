@@ -1,13 +1,14 @@
 {
-  "name": "LUC Creative & Co",
+  "name": "LUC",
   "short_name": "LUC",
+  "lang": "pt-BR",
   "start_url": "/",
-  "display": "standalone",
-  "background_color": "#f4f0ea",
-  "theme_color": "#f4f0ea",
+  "display": "browser",
+  "background_color": "#f8f8f7",
+  "theme_color": "#f8f8f7",
   "icons": [
     {
-      "src": "assets/favicon-luc-site.svg",
+      "src": "/assets/favicon-luc-site.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
