@@ -1,0 +1,12 @@
+@font-face { font-family: 'LUC Sora'; src: url('/assets/sora-84ff7096ae3e.ttf') format('truetype'); font-style: normal; font-weight: 100 800; font-display: block; }
+html, body { height: auto; min-height: 100%; overflow-x: hidden; overflow-y: auto; }
+.page { height: auto; min-height: 100dvh; overflow: visible; padding-bottom: 48px; }
+.hero-stage { padding-top: 24px; padding-bottom: 24px; }
+#ondas-dados-preview { width: 100%; height: 310px; margin: 0 auto 24px; background: transparent; overflow: hidden; }
+#ondas-dados-preview canvas { display: block; width: 100%; height: 100%; }
+#hero-title { font-family: 'LUC Sora', sans-serif; font-weight: 300; }
+#hero-word { font-weight: 700; }
+@media (max-width: 600px) {
+  .hero-stage { padding-top: 12px; padding-bottom: 20px; }
+  #ondas-dados-preview { height: 180px; margin-bottom: 18px; }
+}
